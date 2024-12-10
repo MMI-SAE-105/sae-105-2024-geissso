@@ -3,6 +3,7 @@
     font-family: 'Koulen';
     src: url('/assets/Koulen-Regular.ttf');
  }
+
 p{
     color: #000;
 -webkit-text-stroke-width: 1;
