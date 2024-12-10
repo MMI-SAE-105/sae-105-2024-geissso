@@ -1,0 +1,23 @@
+p{
+    color: #000;
+-webkit-text-stroke-width: 1;
+-webkit-text-stroke-color: #000;
+font-family: Koulen;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; /* 20px */
+letter-spacing: 6.8px;
+}
+
+h1 {
+    color: #000;
+font-family: Koulen;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+style {
+    backdrop-filter: blur(2px);
+}
