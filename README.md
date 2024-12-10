@@ -3,11 +3,11 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
-- URL du site :
-- URL FIGMA :
+- NOM :GEISS
+- PRÉNOM :Solène
+- GROUPE :B1
+- URL du site :https://luminous-longma-2188b9.netlify.app/
+- URL FIGMA :https://www.figma.com/design/9fqsaytDj9CT2VwHmqvI73/SAE103_GEISS_Sol%C3%A8ne?node-id=0-1&t=edpEPJyPva2NBxeU-1
 
 ## Sujet
 
