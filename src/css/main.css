@@ -2,110 +2,137 @@
     font-family: 'Koulen';
     src: url('/assets/Koulen-Regular.ttf');
  }
-
- body {
+/* Général */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
- }
+    padding: 0;
+}
 
-p1{
-    color: #000;
+/* Header */
+.header {
+    background: url('/assets/images/header_pic.png') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.header__burger {
+    width: 40px;
+    height: 40px;
+    background: url('/assets/icones/Menu.png') no-repeat center center/cover;
+}
+.header__title {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+.header__date {
+    font-size: 1.2rem;
+    color: #FFF;
 -webkit-text-stroke-width: 1;
 -webkit-text-stroke-color: #000;
 font-family: Koulen;
 font-size: 20px;
 font-style: normal;
 font-weight: 400;
-line-height: 100%; /* 20px */
+line-height: 100%;
 letter-spacing: 6.8px;
+text-align: center;
 }
-
-h1 {
-    text-align: center;
-    color: #000;
-font-family: Koulen;
-font-size: 40px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
-style {
-    backdrop-filter: blur(2px);
-}
-
-div a {
-    background-color: #0F2713;
-   font-family: Koulen;
-    color: #F5F5F5;
-font-size: var(--sds-typography-body-size-medium);
-font-style: normal;
-font-weight: 400;
-line-height: 16px;
-display: flex;
-padding: var(--sds-size-space-300);
-justify-content: center;
-align-items: center;
-gap: var(--sds-size-space-200);
-margin-left: 150px;
-margin-right: 150px;
-height: 22px;
-}
-style{
-border-radius: var(--sds-size-radius-200);
-border: var(--sds-size-stroke-border) solid #0F2713;
-background: #0F2713;
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
-}
-
-h3 {
+.bandeau__cta {
+    margin-top: 10px;
     color: #E8914D;
-    font-family: Koulen;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%;
+font-family: Koulen;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%;
+text-align: center;
+}
+.bandeau__button {
+    background: #0F2713;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Actualités */
+.news {
+    padding: 20px;
     text-align: center;
 }
+.news__title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.news__item {
+    display: inline-block;
+    margin: 10px;
+    text-align: left;
+}
+.news__image {
+    width: 300px;
+    border-radius: 10px;
+}
+.news__caption {
+    margin-top: 5px;
+}
 
-.header_pic {
+/* Ancienne Édition */
+.old-edition {
+    padding: 20px;
+    text-align: center;
+    background: #f0f0f0;
+}
+.old-edition__title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.old-edition__carousel {
     display: flex;
-    align-content: center;
-    background-image: url('/assets//images/header_pic2.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    
+    overflow-x: scroll;
+    gap: 10px;
+}
+.old-edition__carousel-item img {
+    width: 200px;
+    border-radius: 10px;
 }
 
-h2{
-    color: #0F2713;
-
-font-family: Koulen;
-font-size: 32px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+/* À Propos */
+.about {
+    padding: 20px;
+}
+.about__title {
+    font-size: 2rem;
+}
+.about__link {
+    color: orange;
+    text-decoration: none;
 }
 
-.p2{
-    color: #FFF;
-
-font-family: Koulen;
-font-size: 32px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-text-decoration-line: underline;
-text-decoration-style: solid;
-text-decoration-skip-ink: none;
-text-decoration-thickness: auto;
-text-underline-offset: auto;
-text-underline-position: from-font;
-text-transform: capitalize;
+/* Partenaires */
+.partners {
+    padding: 20px;
+    text-align: center;
+}
+.partners__logos img {
+    width: 150px;
+    margin: 10px;
 }
 
-.main-content {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
+/* Footer */
+.footer {
+    padding: 20px;
+    background: #222;
+    color: white;
+    text-align: center;
+}
+.footer__social img {
+    width: 30px;
+    margin: 5px;
 }

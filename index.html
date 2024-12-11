@@ -3,42 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="src/css/style.css"/>
-    <script src="script.js"></script>
+    <title>Vis'Sport</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <body>
-        <header>
-            <nav class="Menu">
-                 <a href="menu.html">
-                    <img src="/assets/icones/Menu.png" alt="Menu">
-                  </a>
-                  <div class="header_pic">
-                    <div class="main-content">
-                        <div class="title-container">
-                            <h1 class="title">VIS'SPORT</h1>
-                        </div>
-                        <p1 class="date">DU 19 AU 21 SEPTEMBRE 2025</p1>
-                    </div>
-                  <script src="script.js" defer></script>
-                </header>
+    <!-- Header -->
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__burger"></div>
+        </nav>
+        <div class="header__content">
+            <h1 class="header__title">VIS'SPORT</h1>
+            <p class="header__date">DU 19 AU 21 SEPTEMBRE 2025</p>
+        </div>
+    </header>
 
-                </div>
-            <div><h3 classe="sous-titre">PRENEZ VOS PLACES DES MAINTENANT</h3>
-                 </div>
-            
-                <div class="RESERVER">
-                    <a href="billeterie.html" class="RESERVER">RESERVER</a>
-                </div>
-                <h2>Actualités</h2>
-                <p2>MARIE-AMELIE LE FUR Explique pourquoi ce festival l'a touchée</p2>
-                <div class="invitee">
-                <img src="assets/images/invitee.png" alt="Marie-Amélie Le Fur">
+<section class="bandeau">
+    <div class="bandeau__cta">
+        <p>PRENEZ VOS PLACES DES MAINTENANT!</p>
+        <a href="reservation.html" class="bandeau__button">RESERVER</a>
+    </div>
+</section>
+
+    <!-- Section Actualités -->
+    <section class="news">
+        <h2 class="news__title">Actualités</h2>
+        <div class="news__item">
+            <img src="/assets/images/invitee.png" alt="Marie-Amélie Le Fur" class="news__image">
+            <div class="news__caption">
+                <h3 class="news__subtitle">MARIE-AMÉLIE LE FUR</h3>
+                <p class="news__description">Explique pourquoi ce festival l'a touché.</p>
             </div>
-            <div class="film">
-                <img src="assets/images/film.png" alt="The fire inside">
+        </div>
+        <div class="news__item">
+            <img src="/assets/images/film.png" alt="The Fire Inside" class="news__image">
+            <div class="news__caption">
+                <h3 class="news__subtitle">THE FIRE INSIDE</h3>
+                <p class="news__description">Le film à ne pas louper.</p>
             </div>
-            
-            
+        </div>
+    </section>
+
+    <!-- Section Ancienne Édition -->
+    <section class="old-edition">
+        <h2 class="old-edition__title">ANCIENNE ÉDITION</h2>
+        <div class="old-edition__carousel">
+            <div class="old-edition__carousel-item"><img src="/assets/images/caroussel_1.png" alt="Ancienne édition 1"></div>
+            <div class="old-edition__carousel-item"><img src="/assets/images/caroussel_2.png" alt="Ancienne édition 2"></div>
+            <div class="old-edition__carousel-item"><img src="/assets/images/caroussel_3.png" alt="Ancienne édition 3"></div>
+        </div>
+    </section>
+
+    <!-- Section À Propos -->
+    <section class="about">
+        <h2 class="about__title">À PROPOS</h2>
+        <p class="about__text">
+            Vis'Sport, un festival audiovisuel / numérique : une opportunité de partager des moments en famille et de découvrir le sport sous un autre angle.
+        </p>
+        <a href="about.html" class="about__link">→ Lire la suite</a>
+    </section>
+
+    <!-- Section Partenaires -->
+    <section class="partners">
+        <h2 class="partners__title">PARTENAIRES:</h2>
+        <div class="partners__logos">
+            <img src="region.jpg" alt="Région Bourgogne Franche-Comté" class="partners__logo">
+            <img src="decathlon.jpg" alt="Decathlon" class="partners__logo">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__contact">
+            <h3>Nous contacter</h3>
+            <p>Email : vis_sport@example.com</p>
+            <p>Tél. : 01.02.03.04.05</p>
+        </div>
+        <div class="footer__legal">
+            <p>Mentions légales : Article 6 de la Loi n°2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique</p>
+        </div>
+        <div class="footer__social">
+            <a href="#"><img src="facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="youtube.png" alt="YouTube"></a>
+        </div>
+    </footer>
+</body>
 </html>

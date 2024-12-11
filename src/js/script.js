@@ -1,14 +1,9 @@
 
-const toggle = document.querySelector(".Menu");
-const nav = document.querySelector(".Menu"); 
-
-const page = document.body;if (toggle && nav) {
-    toggle.addEventListener("click", () => {
-      const isOpen = toggle.ariaExpanded === "true";
-      const isClosed = !isOpen;
-     
-      toggle.ariaExpanded = isClosed;
-      nav.ariaHidden = isOpen;
-      page.classList.toggle("noscroll", isClosed);
+const carousel = document.querySelector('.old-edition__carousel');
+carousel.addEventListener('wheel', (e) => {
+    e.preventDefault();
+    carousel.scrollBy({
+        left: e.deltaY < 0 ? -100 : 100,
+        behavior: 'smooth',
     });
-  }
+});
