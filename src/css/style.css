@@ -1,59 +1,12 @@
 
-@font-face {
-    font-family: 'Koulen';
-    src: url('/assets/Koulen-Regular.ttf');
- }
+/* Base */
+@import "/assets/components/menu.css";
+@import "/assets/components/media.css";
 
-p{
-    color: #000;
--webkit-text-stroke-width: 1;
--webkit-text-stroke-color: #000;
-font-family: Koulen;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 100%; /* 20px */
-letter-spacing: 6.8px;
-}
+/* Layout */
+@import "/assets/components/header.css";
+@import "/assets/components/footer.css";
 
-h1 {
-    text-align: center;
-    color: #000;
-font-family: Koulen;
-font-size: 40px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
-style {
-    backdrop-filter: blur(2px);
-}
-
-div a {
-   font-family: Koulen;
-    color: #F5F5F5;
-font-size: var(--sds-typography-body-size-medium);
-font-style: normal;
-font-weight: 400;
-line-height: 16px;
-display: flex;
-padding: var(--sds-size-space-300);
-justify-content: center;
-align-items: center;
-gap: var(--sds-size-space-200);
-border-radius: var(--sds-size-radius-200);
-border: var(--sds-size-stroke-border) solid #0F2713;
-background: #0F2713;
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-h2 {
-    color: #E8914D;
-    font-family: Koulen;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%;
-    text-align: center;
-}
+/* src */
+@import "/src/css/main.css"
 
