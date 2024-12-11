@@ -15,6 +15,7 @@ body {
     color: white;
     text-align: center;
     padding: 20px;
+    margin-bottom: 0;
 }
 .header__nav {
     display: flex;
@@ -29,7 +30,16 @@ body {
 .header__title {
     font-size: 2.5rem;
     margin: 10px 0;
+    color: #FFF;
+font-family: Koulen;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
+style .header__title{
+    backdrop-filter: blur(2px);
+}
+
 .header__date {
     font-size: 1.2rem;
     color: #FFF;
@@ -42,8 +52,22 @@ font-weight: 400;
 line-height: 100%;
 letter-spacing: 6.8px;
 text-align: center;
+margin-bottom: 0;
 }
+.separator {
+    margin-top: 0;
+    height: 7px; 
+    background-color: #0F2713; 
+    width: 100%; 
+    margin-bottom: 0;
+}
+
 .bandeau__cta {
+    margin-top: 0;
+height: 97px;
+background: #CF3803;
+margin-right: 0%;
+margin-left: 0%;
     margin-top: 10px;
     color: #E8914D;
 font-family: Koulen;
@@ -83,15 +107,25 @@ text-align: center;
     margin-top: 5px;
 }
 
-/* Ancienne Édition */
+.carousel img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
+}
 .old-edition {
     padding: 20px;
     text-align: center;
-    background: #f0f0f0;
+    background: #B8CBA3;
+
+box-shadow: 0px 8px 14.2px 11px rgba(0, 0, 0, 0.17);
 }
 .old-edition__title {
     font-size: 2rem;
     margin-bottom: 10px;
+}
+.old-edition__title2 {
+    font-size: 2rem;
+    margin-top: 10px;
 }
 .old-edition__carousel {
     display: flex;
@@ -125,14 +159,77 @@ text-align: center;
     margin: 10px;
 }
 
-/* Footer */
 .footer {
-    padding: 20px;
-    background: #222;
+    background: url('/assets/images/footer_background.png') no-repeat center center/cover;
     color: white;
+    padding: 20px 10px;
     text-align: center;
-}
-.footer__social img {
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+  }
+  
+  /* Section Titles */
+  .footer__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Contact Section */
+  .footer__contact-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer__link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .footer__link:hover {
+    text-decoration: underline;
+    color: #ffd1c1; /* Subtle hover color */
+  }
+  
+  /* Legal Section */
+  .footer__text {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  /* Social Media Section */
+  .footer__social-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer__social-link {
+    display: inline-block;
     width: 30px;
-    margin: 5px;
-}
+    height: 30px;
+  }
+  
+  .footer__icon {
+    width: 100%;
+    height: auto;
+    filter: brightness(0) invert(1); /* Make icons white for consistency */
+  }
+  
+  .footer__icon:hover {
+    filter: brightness(0.8);
+  }
+  
