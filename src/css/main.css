@@ -63,7 +63,8 @@ margin-bottom: 0;
 }
 
 .bandeau__cta {
-    margin-top: 0;
+    margin-top: 0 !important;
+   
 height: 97px;
 background: #CF3803;
 margin-right: 0%;
@@ -76,6 +77,11 @@ font-style: normal;
 font-weight: 400;
 line-height: 140%;
 text-align: center;
+}
+
+
+.bandeau__cta p {
+    margin-top: 0;
 }
 .bandeau__button {
     background: #0F2713;
@@ -139,10 +145,27 @@ box-shadow: 0px 8px 14.2px 11px rgba(0, 0, 0, 0.17);
 
 /* À Propos */
 .about {
-    padding: 20px;
+    background-color: #fff8f0;
+
+flex-shrink: 0;
+
+
 }
 .about__title {
+width: fit-content;
+padding-right: 10px;
     font-size: 2rem;
+    text-align: center;
+    color: #B4672B;
+font-family: Koulen;
+font-size: 36px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+border-radius: 21px;
+border: 3px solid #E8914D;
+background: #FFAD4C;
+    
 }
 .about__link {
     color: orange;
