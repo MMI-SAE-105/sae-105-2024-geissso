@@ -1,0 +1,76 @@
+.footer {
+    background: url('/assets/images/footer_background.png') no-repeat center center/cover;
+    color: white;
+    padding: 20px 10px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+
+  }
+  
+  .footer__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Contact Section */
+  .footer__contact-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .footer__link {
+    color: #CCC9C9;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  .footer__link:hover {
+    text-decoration: underline;
+    color: #ffd1c1; /* Subtle hover color */
+  }
+  
+  /* Legal Section */
+  .footer__text {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+  }
+  
+  /* Social Media Section */
+  .footer__social-list {
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+  }
+  .footer__social-link {
+    text-align: left;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .footer__icon {
+    width: 100%;
+    height: auto;
+    filter: brightness(0) invert(1); /* Make icons white for consistency */
+  }
+  
+  .footer__icon:hover {
+    filter: brightness(0.8);
+  }

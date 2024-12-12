@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Syne:wght@400..800&display=swap');
 
 /* Base */
 @import "/assets/components/menu.css";
@@ -9,4 +10,6 @@
 
 /* src */
 @import "/src/css/main.css"
+
+
 
