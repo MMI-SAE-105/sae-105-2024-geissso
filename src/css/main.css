@@ -41,8 +41,22 @@ text-align: center;
 }
 
 .actualite {
-    padding: 20px;
     text-align: center;
+}
+.actualite__description {
+color: #0F2713;
+font-family: Syne;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+}
+
+.actualite__sub {
+    color: #0F2713;
+    font-family: Koulen;
+    font-size: 32px;
+    font-style: normal;
+    margin: 0%;
 }
 .actualite__titre {
     font-size: 2rem;
@@ -51,14 +65,17 @@ text-align: center;
 .actualite__titre {
     display: inline-block;
     margin: 10px;
-    text-align: left;
+    color: #0F2713;
+font-family: "Koulen";
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
 }
 .actualite__image {
     width: 300px;
     border-radius: 10px;
-}
-.actualite__description {
-    margin-top: 5px;
 }
 
 .carousel img {
@@ -106,8 +123,9 @@ line-height: normal;
 border-radius: 21px;
 border: 3px solid #E8914D;
 background: #FFAD4C;
-    
+border-radius: 5px;    
 }
+
 .apropos__text {
     width: 361px;
     color: #000;
@@ -134,7 +152,6 @@ border: 2px solid #0F2713;
 background: rgba(255, 173, 76, 0.00);
 }
 
-/* Partenaires */
 .partenaire {
     padding: 20px;
     text-align: center;
@@ -143,4 +160,93 @@ background: rgba(255, 173, 76, 0.00);
     width: 150px;
     margin: 10px;
 }
-  
+
+/*CSS PAGE A PROPOS*/
+.main-content {
+    padding: 2rem;
+}
+
+.about {
+    margin-bottom: 2rem;
+}
+
+.about__title {
+    color: #FFF;
+-webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color: #E8914D;
+font-family: Koulen;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%;
+text-align:center;
+}
+
+.about__description {
+    width: 355px;
+    color: #CF3803;
+    font-family: Syne;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: var(--sds-typography-body-font-weight-regular);
+    line-height: 100%;
+    background-color: #FEE9D0;
+padding: 7.548px 8.491px;
+justify-content: center;
+align-items: center;
+gap: 9.435px;
+}
+
+.about__list {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.about__list-item {
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.about__list-item::before {
+    content: '\2022';
+    color: #ff6600;
+    position: absolute;
+    left: 0;
+}
+
+/* Location */
+.location {
+    margin-bottom: 2rem;
+}
+
+.location__title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.location__description {
+    margin-bottom: 1rem;
+}
+
+.location__map iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+/* Gallery */
+.gallery {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.gallery__title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.gallery__image {
+    max-width: 100%;
+    border-radius: 10px;
+}
