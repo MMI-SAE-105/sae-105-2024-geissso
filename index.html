@@ -10,9 +10,35 @@
 <body>
     <!-- Header -->
     <header class="header">
-        <nav class="header__nav">
-            <div class="header__burger"></div>
-        </nav>
+      <button class="headermenu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+        <span class="menu-btnbar" aria-hidden="true"></span>
+        <span class="menu-btnbar" aria-hidden="true"></span>
+        <span class="menu-btnbar" aria-hidden="true"></span>
+    </button>
+        <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+            <ul class="menu__list list-unstyled">
+                <li class="menu__item">
+                    <a class="menu__link" href="/a_propos.html">A propos</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/billeterie.html">Billeterie en ligne</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/activites.html">Activités/Programme</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/equipe.html">Notre équipe</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="/valeur.html">Valeurs</a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="header__nav">
+              <button class="header__burger menu-btn" aria-expanded="false" aria-label="Menu">
+                  <img src="/assets/icones/Menu.png" alt="Ouvrir le menu" class="header__burger-icon" />
+              </button>
+          </nav>
         <div class="header__content">
             <h1 class="header__title">VIS'SPORT</h1>
             <p class="header__date">DU 19 AU 21 SEPTEMBRE 2025</p>

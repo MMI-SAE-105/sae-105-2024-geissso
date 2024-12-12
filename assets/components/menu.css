@@ -1,0 +1,32 @@
+.header__menu {
+    width: 450px;
+height: 900px;
+flex-shrink: 0;
+background: #0F2713;
+margin-left: 0%;
+margin-top: 0%;
+}
+
+.menu__link {
+    color: #E8914D;
+    font-family: Syne;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: var(--sds-typography-body-font-weight-regular);
+    line-height: 100%; /* 20px */
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+.menu[aria-hidden="true"] {
+    display: none;
+}
+
+.menu[aria-hidden="false"] {
+    display: block; /* Affiche le menu lorsqu'il est actif */
+}
+
