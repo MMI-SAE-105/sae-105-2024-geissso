@@ -422,6 +422,7 @@ padding: 10px;
     height: 100vh; /* Prend toute la hauteur de la page */
 }
 .movie__affiche-text {
+    display: flex;
     writing-mode: vertical; 
     color: #0F2713;
     text-align: center;
@@ -440,3 +441,8 @@ padding: 10px;
 }
 
 /*CSS DE LA PAGE EQUIPE*/
+.accordeon {
+    justify-content: center;
+    width: 333px;
+height: 203px;
+}

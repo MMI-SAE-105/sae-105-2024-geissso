@@ -59,6 +59,13 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Éléments du carrousel non trouvés ou incomplets.");
     }
   });
+
+  const accordeon = document.querySelector(".accordeon");
+
+
+accordeon.querySelectorAll("details").forEach((det)
+ (det.open = false));
+ 
   
   
   
