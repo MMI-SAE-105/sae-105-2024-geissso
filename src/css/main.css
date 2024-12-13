@@ -258,9 +258,10 @@ text-align:center;
     background-color: #FEE9D0;
     align-content: center;
 justify-content: center !important;
-align-items: center !important;
-text-align: center;
+text-align: left;
 border-radius: 20px;
+margin: 30px;
+padding: 10px;
 }
 
 .about__list {
@@ -284,8 +285,6 @@ border-radius: 20px;
 /* Location */
 .location {
     justify-content: center;
-    margin-left: 25px;
-    
 }
 
 .location__title {
@@ -295,6 +294,7 @@ border-radius: 20px;
 
 .location__description {
     margin-bottom: 1rem;
+    font-family: 'Syne';
 }
 
 .location__map iframe {
@@ -315,6 +315,7 @@ border-radius: 20px;
 .gallery__title {
     font-size: 1.8rem;
     margin-bottom: 1rem;
+    font-family:'Syne' ;
 }
 
 .gallery__image {

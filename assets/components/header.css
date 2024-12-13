@@ -15,9 +15,9 @@ font-family: Koulen;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
-}
-style .header__title{
-    backdrop-filter: blur(2px);
+text-decoration: none;
+
+
 }
 
 .header__date {

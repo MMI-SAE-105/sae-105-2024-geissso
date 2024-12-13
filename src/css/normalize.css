@@ -67,7 +67,7 @@ html {
   }
   
   button:-moz-focus, [type="button"]:-moz-focus, [type="reset"]:-moz-focus, [type="submit"]:-moz-focus {
-    outline: 1px dotted ButtonText;
+    outline: 1px dotted 'ButtonText';
   }
   
   fieldset {
