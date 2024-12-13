@@ -158,10 +158,17 @@ background: rgba(255, 173, 76, 0.00);
 }
 
 /*CSS PAGE A PROPOS*/
+.bandeau2 {
+    margin-top: 0;
+    height: 7px; 
+    background-color: #CF3803; 
+    width: 100%; 
+    margin-bottom: 0;  
+}
 .main-content {
-    padding: 2rem;
     justify-content: center;
     align-items: center;
+    width: 90%;
 }
 
 .about {
@@ -250,4 +257,129 @@ border-radius: 20px;
 .gallery__image {
     max-width: 100%;
     border-radius: 10px;
+}
+
+/*CSS DE LA PAGE FILM*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Syne', sans-serif;
+    color: #000;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
+
+.movie {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.movie__title {
+    font-family: 'Koulen', cursive;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.movie__trailer {
+    margin-bottom: 20px;
+}
+
+.movie__trailer-video {
+    width: 100%;
+    border-radius: 8px;
+    outline: none; 
+}
+
+.movie__quote {
+    font-family: 'Syne', sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    margin: 20px 0;
+    color: #333;
+}
+
+.movie__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Espace entre l'image et la légende */
+}
+
+/* Conteneur de l'image */
+.movie__image-container {
+    position: relative;
+    display: inline-block; /* Permet de contenir l'image et le texte positionné */
+    width: auto;
+    height: auto;
+}
+
+/* Image */
+.movie__image {
+    width: 300px; /* Ajustez la taille selon vos besoins */
+    border: 5px solid #0F2713; /* Bordure verte */
+    border-radius: 8px; /* Coins arrondis */
+}
+
+/* Texte positionné sur l'image */
+.movie__name {
+    position: absolute;
+    bottom: 10px; /* Ajustez la distance par rapport au bas de l'image */
+    left: 50%;
+    transform: translateX(-50%); /* Centre horizontalement */
+    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent pour le contraste */
+    color: #fff; /* Texte blanc */
+    font-family: Koulen, sans-serif;
+    font-size: 1.5rem;
+    padding: 5px 5px; /* Ajoute un peu de rembourrage autour du texte */
+    border: 2px solid #0F2713; /* Bordure verte */
+    border-radius: 5px; /* Coins arrondis */
+    text-align: center;
+    text-transform: uppercase; /* Tout en majuscules */
+}
+
+/* Légende en dessous de l'image */
+.movie__caption {
+    font-family: Syne, sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    color: #000; /* Couleur noire pour le contraste */
+    margin-top: 10px;
+}
+
+.movie__promise {
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    margin: 10px 0 20px;
+    color: #000;
+}
+
+.movie__affiche-container {
+    display: flex;
+    align-items: center; /* Centre verticalement */
+    justify-content: center; /* Centre horizontalement */
+    gap: 10px; /* Espace entre le texte et l'image */
+    height: 100vh; /* Prend toute la hauteur de la page */
+}
+.movie__affiche-text {
+    writing-mode: vertical; 
+    color: #0F2713;
+    text-align: center;
+    font-family: Koulen;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.movie__affiche-image {
+    height: auto;
+    max-height: 500px; /* Ajustez la taille maximum si nécessaire */
+    width: auto;
+    border: 3px solid #0F2713; /* Bordure autour de l'image */
+    border-radius: 5px; /* Coins légèrement arrondis */
 }
