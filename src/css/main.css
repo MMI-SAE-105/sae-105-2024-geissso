@@ -441,8 +441,31 @@ padding: 10px;
 }
 
 /*CSS DE LA PAGE EQUIPE*/
+.titre_equipe{
+    font-family: koulen;
+    font-size: 32px;
+    text-align: center;
+    color:#0F2713;
+}
+
 .accordeon {
     justify-content: center;
     width: 333px;
 height: 203px;
+}
+
+.accordeon_titre{
+    font-size: 32px;
+    font-family: koulen;
+    text-align: center;
+    color: #0F2713;
+    margin:3px;
+}
+
+.accordeon_description{
+    font-family: Syne;
+    color: #0F2713;
+    text-align: center;
+    padding: 15px;
+    margin:3px;
 }
