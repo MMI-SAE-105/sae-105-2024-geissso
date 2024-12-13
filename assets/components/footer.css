@@ -2,7 +2,7 @@
     background: url('/assets/images/footer_background.png') no-repeat center center/cover;
     color: white;
     padding: 20px 10px;
-    text-align: left;
+    text-align: left !important;
     font-family: Arial, sans-serif;
     padding: 0%;
   }
