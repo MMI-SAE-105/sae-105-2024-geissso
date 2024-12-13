@@ -3,8 +3,11 @@
     background: url('/assets/images/header_pic.png') no-repeat center center/cover;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 20px 0px;
     margin-bottom: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
     
 }
 .header__title {
