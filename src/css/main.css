@@ -304,7 +304,6 @@ padding: 10px;
     border-radius: 20px;
 }
 
-/* Gallery */
 .gallery {
     text-align: center;
     margin-bottom: 2rem;
@@ -377,14 +376,12 @@ padding: 10px;
     height: auto;
 }
 
-/* Image */
 .movie__image {
     width: 300px; /* Ajustez la taille selon vos besoins */
     border: 5px solid #0F2713; /* Bordure verte */
     border-radius: 8px; /* Coins arrondis */
 }
 
-/* Texte positionné sur l'image */
 .movie__name {
     position: absolute;
     bottom: 10px; /* Ajustez la distance par rapport au bas de l'image */
@@ -441,3 +438,5 @@ padding: 10px;
     border: 3px solid #0F2713; /* Bordure autour de l'image */
     border-radius: 5px; /* Coins légèrement arrondis */
 }
+
+/*CSS DE LA PAGE EQUIPE*/
