@@ -74,12 +74,20 @@
     </section>
 
     <!-- Section Ancienne Édition -->
-    <section class="ancienne-edition">
-        <h2 class="ancienne-edition__titre">ANCIENNE ÉDITION</h2>
-        <div class="ancienne-edition__carousel">
-            <div class="ancienne-edition__carousel-item"><img src="/assets/images/caroussel_1.png" alt="Ancienne édition 1"></div>
-            <div class="ancienne-edition__carousel-item"><img src="/assets/images/caroussel_2.png" alt="Ancienne édition 2"></div>
-            <div class="ancienne-edition__carousel-item"><img src="/assets/images/caroussel_3.png" alt="Ancienne édition 3"></div>
+     <section>
+      <div class="carousel" aria-labelledby="carousel-heading">
+        <h2 id="carousel-heading" class="carousel__heading">
+          ANCIENNE ÉDITION</h2>
+        <div class="carousel__container" role="region" aria-live="polite">
+          <div class="carousel__item">
+            <img src="/assets/images/caroussel_1.png" alt="Ancienne édition 1" />
+          </div>
+          <div class="carousel__item">
+            <img src="/assets/images/caroussel_2.png" alt="Ancienne édition 2" />
+          </div>
+          <div class="carousel__item">
+            <img src="/assets/images/caroussel_3.png" alt="Ancienne édition 3" />
+          </div>
         </div>
         <div class="carousel__controls">
           <button class="carousel__button carousel__button--prev" aria-label="Défiler vers la gauche">
@@ -88,8 +96,9 @@
           <button class="carousel__button carousel__button--next" aria-label="Défiler vers la droite">
             <img src="/assets/icones/Arrow right-circle.png" alt="fleche droite" />
           </button>
-      </div>
-    </section>
+        </div>
+      </div>      
+</section>  
 
     <!-- Section À Propos -->
     <section class="apropos">

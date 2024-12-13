@@ -1,32 +1,46 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const toggle = document.querySelector(".menu-btn"); // Bouton burger
-    const nav = document.querySelector(".menu"); // Menu
-    
-    toggle.addEventListener("click", () => {
-        const isOpen = toggle.getAttribute("aria-expanded") === "true"; // Vérifier si le menu est ouvert
-        const isClosed = !isOpen; // Inverser l'état du menu
-
-        console.log("isOpen : ", isOpen, "isClosed :", isClosed); // Log pour vérifier
-
-        // Modifiez l'état du menu et du bouton
-        nav.setAttribute("aria-hidden", isOpen ? "true" : "false"); // Afficher/masquer le menu
-        toggle.setAttribute("aria-expanded", isClosed.toString()); // Modifier l'état du bouton
-    });
-});
-const carousel = document.querySelector(".carousel_ecran");
-const prevButton = document.querySelector(".carousel__button--prev");
-const nextButton = document.querySelector(".carousel__button--next");
-
-if (carousel && prevButton && nextButton) {
-  const items = document.querySelectorAll(".items_carousel");
-  const itemWidth = items[0].clientWidth;
-
+    const carouselContainer = document.querySelector(".carousel__container");
+    const items = document.querySelectorAll(".carousel__item");
+    const prevButton = document.querySelector(".carousel__button--prev");
+    const nextButton = document.querySelector(".carousel__button--next");
   
-  prevButton.addEventListener("click", () => {
-    carousel.scrollBy({ left: -itemWidth, behavior: "smooth" });
+    let currentIndex = 0;
+  
+    if (carouselContainer && items.length > 0 && prevButton && nextButton) {
+      const itemWidth = items[0].offsetWidth;
+  
+      // Fonction pour mettre à jour la position du carrousel
+      const updateCarousel = () => {
+        const newScrollLeft = currentIndex * itemWidth;
+        carouselContainer.scrollTo({ left: newScrollLeft, behavior: "smooth" });
+  
+        // Désactiver les boutons au début ou à la fin
+        prevButton.disabled = currentIndex === 0;
+        nextButton.disabled = currentIndex === items.length - 1;
+      };
+  
+      // Gestion du clic sur le bouton précédent
+      prevButton.addEventListener("click", () => {
+        if (currentIndex > 0) {
+          currentIndex--;
+          updateCarousel();
+        }
+      });
+  
+      // Gestion du clic sur le bouton suivant
+      nextButton.addEventListener("click", () => {
+        if (currentIndex < items.length - 1) {
+          currentIndex++;
+          updateCarousel();
+        }
+      });
+  
+      // Initialiser l'état des boutons
+      updateCarousel();
+    } else {
+      console.error("Éléments du carrousel non trouvés ou incomplets.");
+    }
   });
-
-  nextButton.addEventListener("click", () => {
-    carousel.scrollBy({ left: itemWidth, behavior: "smooth" });
-  });
-}
+  
+  
+  
