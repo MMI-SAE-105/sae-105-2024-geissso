@@ -97,8 +97,8 @@ html {
   }
   
   [type="search"] {
-    -webkit-appearance: textfield; /* 1 */
-    outline-offset: -2px; /* 2 */
+    -webkit-appearance: textfield;
+    outline-offset: -2px; 
   }
   
   [type="search"]::-webkit-search-decoration {

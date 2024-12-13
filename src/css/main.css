@@ -322,7 +322,7 @@ padding: 10px;
     border-radius: 10px;
 }
 
-/*CSS DE LA PAGE FILM*/
+/*CSS DE LA PAGE THE FIRE INSIDE*/
 
 .page {
     display: flex;
@@ -441,31 +441,91 @@ padding: 10px;
 }
 
 /*CSS DE LA PAGE EQUIPE*/
-.titre_equipe{
-    font-family: koulen;
-    font-size: 32px;
-    text-align: center;
-    color:#0F2713;
-}
-
-.accordeon {
+/* Liste des images */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Permet d'avoir une disposition en grille */
+    gap: 10px;
+    justify-content: flex-start; /* Alignement à gauche */
+  }
+  
+  ul li {
+    display: inline-block;
+  }
+  
+  ul img {
+    width: 150px; /* Taille fixe pour les vignettes */
+    height: 150px;
+    object-fit: cover; /* Recadre l'image pour qu'elle rentre dans le carré */
+    cursor: pointer;
+    border-radius: 8px; /* Coins arrondis */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  ul img:hover {
+    transform: scale(1.1); /* Effet d'agrandissement au survol */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Ombre légère au survol */
+  }
+  
+  /* Lightbox */
+  .lightbox ul{
     justify-content: center;
-    width: 333px;
-height: 203px;
-}
+  }
 
-.accordeon_titre{
+.lightbox__titre{
+    font-family:'Koulen';
+    text-align: center;
     font-size: 32px;
-    font-family: koulen;
-    text-align: center;
-    color: #0F2713;
-    margin:3px;
 }
 
-.accordeon_description{
-    font-family: Syne;
-    color: #0F2713;
-    text-align: center;
-    padding: 15px;
-    margin:3px;
-}
+  .dialog {
+    border: none;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.8); /* Arrière-plan sombre */
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; 
+    max-width: 800px;
+    overflow: hidden;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  
+  .dialog img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Maintient les proportions de l'image */
+    border-radius: 12px 12px 0 0; /* Coins arrondis en haut */
+  }
+  
+  .lightbox__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.8); 
+    border: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+  }
+  
+  ::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: background-color 0.3s ease;
+  }
+  

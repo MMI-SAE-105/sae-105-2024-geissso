@@ -66,6 +66,34 @@ document.addEventListener("DOMContentLoaded", () => {
 accordeon.querySelectorAll("details").forEach((det)
  (det.open = false));
  
-  
-  
-  
+
+ // *** LIGHTBOX ***
+ document.addEventListener("DOMContentLoaded", () => {
+  const images = document.querySelectorAll("ul img");
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = lightbox.querySelector("img");
+  const closeButton = lightbox.querySelector(".lightbox__close");
+
+  // Gestion de l'ouverture de la lightbox
+  images.forEach((img) => {
+    img.addEventListener("click", () => {
+      const fullImgSrc = img.dataset.fullImg; // Récupérer l'image en haute résolution
+      lightboxImg.src = fullImgSrc; // Remplir l'image de la lightbox
+      lightbox.showModal(); // Afficher la lightbox
+    });
+  });
+
+  // Gestion de la fermeture via le bouton
+  closeButton.addEventListener("click", () => {
+    lightbox.close(); // Fermer la lightbox
+    lightboxImg.src = ""; // Réinitialiser l'image
+  });
+
+  // Gestion de la fermeture en cliquant en dehors de l'image
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+      lightbox.close();
+      lightboxImg.src = ""; // Réinitialiser l'image
+    }
+  });
+});

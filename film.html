@@ -45,91 +45,105 @@
         </a>
     </div>
     </header>
-</header>
-    <body class="page">
-        <section class="movie">
-            <h1 class="movie__title">THE FIRE INSIDE</h1>
-
-            <div class="movie__trailer">
-                <video class="movie__trailer-video" controls>
-                    <source src="/assets/videos/TRAILER THE FIRE INSIDE.mp4" type="trailer the fire Inside">
-                    Votre navigateur ne supporte pas la lecture de vidéos.
-                </video>
-            </div>
-            
+    <section class="lightbox">
+      <h1 class="lightbox__titre">Films</h1>
+      <ul>
+        <li class="lightbox__item">
+          <img 
+            src="/assets/images/rocky.avif" 
+            alt="Affiche du film Rocky" 
+            data-full-img="/assets/images/rocky.avif" 
+          />
+        </li>
+        <li class="lightbox__item">
+          <img 
+            src="/assets/images/rush.jpg" 
+            alt="Affiche du film Rush" 
+            data-full-img="/assets/images/rush.jpg" 
+          />
+        </li>
+        <li class="lightbox__item">
+          <img 
+            src="/assets/images/baseball_film.jpg" 
+            alt="Affiche du film de Baseball" 
+            data-full-img="/assets/images/baseball_film.jpg" 
+          />
+        </li>
+        <li class="lightbox__item">
+          <img 
+            src="/assets/images/invictus.jpg" 
+            alt="Affiche du film Invictus" 
+            data-full-img="/assets/images/invictus.jpg" 
+          />
+        </li>
+        <li class="lightbox__item">
+          <img 
+            src="/assets/images/le-mans-66-1280x909.jpg" 
+            alt="Affiche du film Le Mans 66" 
+            data-full-img="/assets/images/le-mans-66-1280x909.jpg" 
+          />
+        </li>
+      </ul>
+      <dialog id="lightbox">
+        <img src="/assets/images/rocky.avif" alt="Image agrandie" />
+        <button class="lightbox__close" aria-label="Fermer">X</button>
+      </dialog>
+    </section>
     
-            <blockquote class="movie__quote">
-                "Plongez au cœur des flammes avec The Fire Inside, un récit intense où le courage, les secrets et la force intérieure s'entrelacent dans une lutte brûlante pour la vérité."
-            </blockquote>
     
-            <div class="movie__profile">
-                <div class="movie__image-container">
-                    <img class="movie__image" src="/assets/images/RACHELLLLL.png" alt="Rachel Morrison">
-                    <p class="movie__name">RACHEL MORRISON</p>
-                </div>
-                <p class="movie__caption">c’est la promesse que nous fait Rachel Morrison</p>
-            </div>
-            <div class="movie__affiche-container">
-                <p class="movie__affiche-text">AFFICHE</p>
-                <img class="movie__affiche-image" src="/assets/images/affiche_the_fire_INSIDE.png" alt="Affiche du film">
-            </div>
-        </section>
-        <footer class="footer">
-            <div class="footer__container">
-              
-              <div class="footer__contact">
-                <h3 class="footer__title">Nous contacter</h3>
-                <ul class="footer__contact-list">
-                  <li>
-                    <a href="mailto:vis_sport@example.com" class="footer__link">
-                      vis_sport@example.com
-                    </a>
-                  </li>
-                  <li>
-                    <a href="tel:+33102030405" class="footer__link">
-                      01.02.03.04.05
-                    </a>
-                  </li>
-                </ul>
-              </div>
-          
-             
-              <div class="footer__legal">
-                <h3 class="footer__title">Mentions légales</h3>
-                <p class="footer__text">
-                  Article 6 de la Loi n° 2004-575 du 21 juin 2004 pour la confiance dans
-                  l'économie numérique
-                </p>
-              </div>
-          
-              
-              <div class="footer__social">
-                <h3 class="footer__title">Social</h3>
-                <ul class="footer__social-list">
-                  <li>
-                    <a href="https://facebook.com" class="footer__social-link" target="_blank" aria-label="Facebook">
-                      <img src="/assets/icones/facebook_logo.png" alt="Facebook" class="footer__icon">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://instagram.com" class="footer__social-link" target="_blank" aria-label="Instagram">
-                      <img src="assets/icones/ig_logo.png" alt="Instagram" class="footer__icon">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com" class="footer__social-link" target="_blank" aria-label="Twitter">
-                      <img src="assets/icones/Path.png" alt="Twitter" class="footer__icon">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://youtube.com" class="footer__social-link" target="_blank" aria-label="YouTube">
-                      <img src="/assets/icones/youtube-logo.png" alt="YouTube" class="footer__icon">
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </footer>
-    </body>
-    </html>
+    <footer class="footer">
+      <div class="footer__container">
+        <!-- Contact Section -->
+        <div class="footer__contact">
+          <h3 class="footer__title">Nous contacter</h3>
+          <ul class="footer__contact-list">
+            <li>
+              <a href="mailto:vis_sport@example.com" class="footer__link">
+                vis_sport@example.com
+              </a>
+            </li>
+            <li>
+              <a href="tel:+33102030405" class="footer__link">
+                01.02.03.04.05
+              </a>
+            </li>
+          </ul>
+        </div>
     
+        <!-- Legal Section -->
+        <div class="footer__legal">
+          <h3 class="footer__title">Mentions légales</h3>
+          <p class="footer__text">
+            Article 6 de la Loi n° 2004-575 du 21 juin 2004 pour la confiance dans
+            l'économie numérique
+          </p>
+        </div>
+    
+        <!-- Social Media Section -->
+        <div class="footer__social">
+          <h3 class="footer__title">Social</h3>
+          <ul class="footer__social-list">
+            <li>
+              <a href="https://facebook.com" class="footer__social-link" target="_blank" aria-label="Facebook">
+                <img src="/assets/icones/facebook_logo.png" alt="Facebook" class="footer__icon">
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com" class="footer__social-link" target="_blank" aria-label="Instagram">
+                <img src="assets/icones/ig_logo.png" alt="Instagram" class="footer__icon">
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com" class="footer__social-link" target="_blank" aria-label="Twitter">
+                <img src="assets/icones/Path.png" alt="Twitter" class="footer__icon">
+              </a>
+            </li>
+            <li>
+              <a href="https://youtube.com" class="footer__social-link" target="_blank" aria-label="YouTube">
+                <img src="/assets/icones/youtube-logo.png" alt="YouTube" class="footer__icon">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
