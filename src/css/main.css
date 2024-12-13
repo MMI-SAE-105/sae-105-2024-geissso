@@ -38,6 +38,7 @@ text-align: center;
 
 .actualite {
     text-align: center;
+    margin: 0px;
 }
 .actualite__description {
 color: #0F2713;
@@ -45,6 +46,7 @@ font-family: Syne;
 font-size: 20px;
 font-style: normal;
 font-weight: 400;
+margin:0px;
 }
 
 .actualite__sub {
@@ -52,15 +54,16 @@ font-weight: 400;
     font-family: Koulen;
     font-size: 32px;
     font-style: normal;
-    margin: 0%;
+    margin: 0px;
+}
+.actualite__subtitle {
+    margin: 0;
 }
 .actualite__titre {
     font-size: 2rem;
-    margin-bottom: 10px;
 }
 .actualite__titre {
     display: inline-block;
-    margin: 10px;
     color: #0F2713;
 font-family: "Koulen";
 font-size: 32px;
@@ -96,6 +99,47 @@ line-height: normal;
 .ancienne-edition__carousel-item img {
     width: 200px;
     border-radius: 10px;
+}
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel__container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Chaque élément du carrousel */
+.carousel__item {
+    min-width: 100%; /* Chaque slide prend toute la largeur */
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+.carousel__controls {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0;
+}
+
+.carousel__button {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    border-radius: 50%;
+    right: 10px;
+    top: 683px;
+    color: var(--blanc);
 }
 
 .apropos {
@@ -264,12 +308,6 @@ border-radius: 20px;
 }
 
 /*CSS DE LA PAGE FILM*/
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Syne', sans-serif;
-    color: #000;
-}
 
 .page {
     display: flex;
